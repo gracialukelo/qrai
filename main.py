@@ -2,8 +2,8 @@ import qrcode
 
 
 def build_qrcode(url):
-    img = qrcode.make("https://realpython.com/if-name-main-python/")
-    img.save("TheCode.jpg")
+    img = qrcode.make(url)
+    img.save("YoloCourse.jpg")
 
 
 
@@ -11,7 +11,8 @@ def build_qrcode(url):
 
 
 if __name__ == "__main__":
-    url = "https://realpython.com/if-name-main-python/"
+    # YOLO QR Code
+    url = "https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb"  
 
     print(f"Der Code wird erstellt...")
     build_qrcode(url=url)
